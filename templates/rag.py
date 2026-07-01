@@ -1,4 +1,4 @@
-rom langchain_text_splitters import CharacterTextSplitter, RecursiveCharacterTextSplitter
+from langchain_text_splitters import CharacterTextSplitter, RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader # Changed to PyPDFLoader
 from langchain_chroma import Chroma
 # from langchain_docling.loader import DoclingLoader # Removed DoclingLoader
@@ -8,7 +8,6 @@ from langchain.embeddings.base import Embeddings
 from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
 
 # Ensure pypdf is installed for PyPDFLoader
-!pip install pypdf -qU
 
 # Define the directory containing the PDF file and the persistent directory
 current_dir = "/content/"
@@ -75,3 +74,47 @@ for i, doc in enumerate(relevant_docs, 1):
 # cell 3
 
 
+from langchain_core.runnables import RunnableParallel, RunnableLambda, RunnablePassthrough
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+
+template = """
+<|system|>>
+You are a helpful assistant designed to help users navigate a complex set of documents. Answer the user's query based on the following context. Follow these rules:
+
+Use only information from the provided context.
+
+If the context doesn't adequately address the query, say: "Based on the available information, I cannot provide a complete answer to this question."
+
+Give clear, concise, and accurate responses. Explain complex terms if needed.
+
+If the context contains conflicting information, point this out without attempting to resolve the conflict.
+
+Don't use phrases like "according to the context," "as the context states," etc.
+
+Remember, your purpose is to provide information based on the retrieved context, not to offer original advice.
+
+CONTEXT: {context}
+</s>
+<|user|>
+{query}
+</s>
+<|assistant|>
+"""
+
+
+# cell 4
+
+prompt = ChatPromptTemplate.from_template(template)
+output_parser = StrOutputParser()
+
+chain = (
+    {"context": retriever, "query": RunnablePassthrough()}
+    | prompt
+    | model
+    | output_parser
+)
+
+response = chain.invoke("Who is Odysseus")
+
+print(response)
