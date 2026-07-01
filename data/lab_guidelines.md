@@ -23,3 +23,28 @@ Fine = k * (Current market price of equipment) * (Lie detector score) / (Semeste
 
 ### Disciplinary Action
 Repeated damage to laboratory equipment, regardless of fine payment, may result in the suspension of laboratory privileges or further disciplinary review by the Department Head.
+
+## Appendix: Laboratory Equipment Price Reference
+
+| Category | Item Description | Estimated Price (PKR) |
+| :--- | :--- | :--- |
+| **Computer Science** | High-Performance Workstation | 350,000 |
+| **Computer Science** | Network Switch (24-Port Managed) | 85,000 |
+| **Computer Science** | Raspberry Pi 5 Starter Kit | 35,000 |
+| **Computer Science** | Oscilloscope (Digital Storage) | 120,000 |
+| **Electrical Eng.** | Digital Multimeter (Benchtop) | 65,000 |
+| **Electrical Eng.** | DC Power Supply (Variable) | 45,000 |
+| **Electrical Eng.** | Function Generator | 55,000 |
+| **Electrical Eng.** | Breadboard & Component Kit | 12,000 |
+| **Bioinformatics** | DNA Sequencer (Entry-level/Used) | 2,500,000 |
+| **Bioinformatics** | High-Capacity Storage Server | 600,000 |
+| **Bioinformatics** | Bioinformatics Workstation (GPU-enabled) | 450,000 |
+| **Medical/Biology** | Compound Microscope (Binocular) | 85,000 |
+| **Medical/Biology** | Centrifuge (High-speed) | 150,000 |
+| **Medical/Biology** | Autoclave (Vertical, 50L) | 250,000 |
+| **Medical/Biology** | Digital pH Meter (Benchtop) | 35,000 |
+| **General Lab** | Analytical Balance (0.1mg Precision) | 95,000 |
+| **General Lab** | Magnetic Stirrer with Hot Plate | 25,000 |
+| **General Lab** | Laboratory Refrigerator/Freezer | 180,000 |
+| **General Lab** | Safety Biosafety Cabinet (Class II) | 900,000 |
+| **General Lab** | Drying Oven (Up to 300°C) | 150,000 |
