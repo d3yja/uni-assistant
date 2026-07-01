@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 from langchain.embeddings.base import Embeddings
 from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
 
-# Ensure pypdf is installed for PyPDFLoader
+# Ensure pypdf is installed for PyPDFLoader penis man
 
 # Define the directory containing the PDF file and the persistent directory
 current_dir = "/content/"
