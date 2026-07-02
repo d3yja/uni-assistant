@@ -1,0 +1,10 @@
+langchain
+langchain-community
+langchain-chroma
+langchain-text-splitters
+langchain-groq
+langgraph
+"unstructured[md]"
+fastembed
+pydantic
+python-dotenv
