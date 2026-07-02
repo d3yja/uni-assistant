@@ -15,23 +15,6 @@ from human_review import human_review
 #API Key
 os.environ["GROQ_API_KEY"] = getpass.getpass("Enter your Groq API key: ")
 
-#importing chatgroq
-llm = ChatGroq(
-    model="qwen/qwen3-32b",
-    temperature=0,
-    max_tokens=None,
-    timeout=None,
-    max_retries=2,
-)
-
-class GraphState(TypedDict):
-    question: str
-    intent: str
-    selected_documents: list[str]
-    retrieved_documents: list[str]
-    answer: str
-
-
 # ============================================================
 # GROQ LLM
 # ============================================================
@@ -76,7 +59,6 @@ Available categories:
 greeting
 rag
 memory
-human
 unknown
 
 Definitions
@@ -102,12 +84,6 @@ memory
 Questions involving saving,
 remembering,
 or recalling information.
-
-human
-Questions that explicitly ask for a human,
-administrator,
-staff member,
-or require manual review.
 
 Return ONLY ONE WORD.
 
@@ -141,7 +117,6 @@ def classify_intent(state: GraphState):
     "greeting",
     "rag",
     "memory",
-    "human",
     "unknown"
 ]
 
@@ -327,6 +302,83 @@ def generate_answer_node(state: GraphState):
     return {
         "answer": answer
     }
+
+
+# ============================================================
+# Human Review
+# ============================================================
+
+review_prompt = ChatPromptTemplate.from_messages(
+[
+(
+"system",
+"""
+You are deciding whether an answer requires human review.
+
+Return ONLY:
+
+yes
+
+or
+
+no
+
+Review is required if:
+
+- the retrieved answer has low confidence
+- the user asks for permission
+- the question is about personal academic decisions
+- the answer could not be confidently answered
+- the answer says information was not found
+- retrieved_documents is empty
+- the answer says "I couldn't find"
+
+Return only yes or no.
+"""
+),
+(
+"human",
+"""
+Question:
+{question}
+
+Answer:
+{answer}
+"""
+)
+]
+)
+
+
+def review_decision_node(state: GraphState):
+
+    chain = review_prompt | llm
+
+    result = chain.invoke(
+        {
+            "question": state["question"],
+            "answer": state["answer"]
+        }
+    )
+
+    decision = result.content.strip().lower()
+
+    return {
+        "needs_human_review":
+            decision == "yes"
+    }
+
+
+# ============================================================
+# Human Review Router Node
+# ============================================================
+
+def review_router(state: GraphState):
+
+    if state["needs_human_review"]:
+        return "review"
+
+    return "final"
 
 
 # ============================================================

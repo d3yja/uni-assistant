@@ -7,17 +7,21 @@ from langgraph.graph import StateGraph, START, END
 from state import GraphState
 
 from nodes import (
-    greeting_node,
-    classify_intent,
-    intent_router,
-    document_picker,
-    retrieve_documents_node,
-    rag_router,
-    generate_answer_node,
-    clarification_node,
-    memory_node,
-    human_review_node,
-    final_node,
+
+greeting_node,
+classify_intent,
+intent_router,
+document_picker,
+retrieve_documents_node,
+rag_router,
+generate_answer_node,
+review_decision_node,
+review_router,
+clarification_node,
+memory_node,
+human_review_node,
+final_node
+
 )
 
 # ============================================================
@@ -61,6 +65,11 @@ builder.add_node(
 )
 
 builder.add_node(
+    "review_decision",
+    review_decision_node
+)
+
+builder.add_node(
     "clarification",
     clarification_node
 )
@@ -94,12 +103,9 @@ builder.add_conditional_edges(
     intent_router,
     {
         "greeting": "greeting",
-
         "memory": "memory",
-
-        "human": "human_review",
-
         "rag": "document_picker",
+        "unknown": "clarification",
     },
 )
 
@@ -141,12 +147,21 @@ builder.add_conditional_edges(
 
 builder.add_edge(
     "generate_answer",
-    "human_review"
+    "review_decision"
 )
 
 builder.add_edge(
     "clarification",
     "final_answer"
+)
+
+builder.add_conditional_edges(
+    "review_decision",
+    review_router,
+    {
+        "review": "human_review",
+        "final": "final_answer",
+    }
 )
 
 # ------------------------------------------------------------
