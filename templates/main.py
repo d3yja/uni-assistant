@@ -8,6 +8,7 @@ print("- Hostel")
 print("- Academic Calendar")
 print("- Labs")
 print("- Contact Directory")
+print("- University-Endorsed Masturbation Techniques")
 print("=" * 60)
 
 question = input("\nHow may I help you?\n> ")
