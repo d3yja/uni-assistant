@@ -318,9 +318,6 @@ def retrieve_documents_node(state: GraphState):
 
     """
     Retrieves document chunks from the selected documents.
-
-    Placeholder:
-    Calls your future RAG retrieval pipeline.
     """
 
     question = state["question"]

@@ -120,7 +120,7 @@ print("=" * 60)
 
 text_splitter = RecursiveCharacterTextSplitter(
 
-    chunk_size=500,
+    chunk_size=600,
 
     chunk_overlap=100,
 
@@ -209,7 +209,7 @@ def retrieve_documents(
         search_type="similarity",
 
         search_kwargs={
-            "k": 4
+            "k": 6
         }
 
     )
@@ -256,6 +256,15 @@ RAG_PROMPT = ChatPromptTemplate.from_template(
 You are a University Assistant.
 
 Answer the student's question ONLY using the provided university documents.
+
+You are a University Assistant.
+
+Additional Rule:
+- If equipment is broken accidentally, the lie detector score is 0.
+- If equipment is broken intentionally, the lie detector score is 1.
+- If user has specified the lie detector score, use that score to determine the fine.
+
+Answer the student's question ONLY using the provided context and the additional rule above and below.
 
 Rules:
 
