@@ -149,7 +149,38 @@ document_prompt = ChatPromptTemplate.from_messages(
         (
             "system",
             """
-You choose which university documents are required.
+You are selecting documents for a retrieval system.
+
+Choose EVERY document that might contain information needed to answer the question.
+
+If answering requires combining information from multiple documents, return ALL relevant filenames.
+
+Examples:
+
+Question:
+What is the fine for breaking a microscope?
+
+Return:
+
+lab_guidelines.md
+equipment_prices.md
+
+Question:
+When is the final exam?
+
+Return:
+
+academic_calendar.md
+
+Question:
+What happens if I miss three labs?
+
+Return:
+
+attendance_policy.md
+lab_guidelines.md
+
+Return ONLY filenames.
 
 Available documents:
 
