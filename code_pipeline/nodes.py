@@ -1,25 +1,17 @@
 #importations
-from typing_extensions import TypedDict
-from langgraph.graph import StateGraph, START, END
-from IPython.display import Image, display
-from pydantic import BaseModel, Field
 from langchain_groq import ChatGroq
-import getpass
 import os
-from typing import Literal
 from langchain_core.prompts import ChatPromptTemplate
 from state import GraphState
 from human_review import human_review
+from dotenv import load_dotenv
 from memory import (
     save_user_memory,
     get_user_memory,
     get_all_memory,
 )
 
-
-
-#API Key
-os.environ["GROQ_API_KEY"] = getpass.getpass("Enter your Groq API key: ")
+load_dotenv()
 
 # ============================================================
 # GROQ LLM
@@ -87,9 +79,14 @@ contacts,
 or any factual information that should be answered from documents.
 
 memory
-Questions involving saving,
-remembering,
-or recalling information.
+Questions about remembering information.
+Examples
+Remember my favorite subject is AI.
+Remember I live in Lahore.
+Remember my name is Muhammad.
+What do you remember about me?
+What do you know about me?
+Recall my saved information.
 
 Return ONLY ONE WORD.
 
@@ -223,82 +220,57 @@ def document_picker(state: GraphState):
 
 def memory_node(state: GraphState):
 
-    """memory
-
-    Questions about remembering information.
-
-    Examples
-
-    Remember my favorite subject is AI.
-
-    Remember I live in Lahore.
-
-    What do you remember about me?
-
-    hat do you know about me?"""
-
     question = state["question"].lower()
 
     # -----------------------------
     # Save memory
     # -----------------------------
-
     if "remember" in question:
 
         try:
 
-            text = state["question"]
-
-            info = text.split("remember", 1)[1].strip()
+            info = state["question"].split("remember", 1)[1].strip()
 
             save_user_memory(info)
 
             return {
-
-                "answer":
-                f"I'll remember that: {info}"
-
+                "answer": f"I'll remember that: {info}"
             }
 
-        except:
+        except Exception:
 
             return {
-
-                "answer":
-                "I couldn't understand what to remember."
-
+                "answer": "I couldn't understand what to remember."
             }
 
     # -----------------------------
     # Recall memory
     # -----------------------------
+    if (
+        "what do you remember" in question
+        or "what do you know about me" in question
+    ):
 
-    if "what do you remember" in question \
-       or "what do you know about me" in question:
+        memory = get_all_memory()
 
-    memory = get_all_memory()
+        if "memories" not in memory or len(memory["memories"]) == 0:
 
-    if "memories" not in memory or len(memory["memories"]) == 0:
+            return {
+                "answer": "I don't have anything stored yet."
+            }
+
+        text = "Here is what I remember:\n\n"
+
+        for i, item in enumerate(memory["memories"], start=1):
+
+            text += f"{i}. {item}\n"
 
         return {
-            "answer": "I don't have anything stored yet."
+            "answer": text
         }
 
-    text = "Here is what I remember:\n\n"
-
-    for i, item in enumerate(memory["memories"], start=1):
-
-        text += f"{i}. {item}\n"
-
     return {
-        "answer": text
-    }
-
-    return {
-
-        "answer":
-        "Memory request completed."
-
+        "answer": "Memory request completed."
     }
 
 # These will be implemented later

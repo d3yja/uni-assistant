@@ -5,7 +5,9 @@
 import json
 from pathlib import Path
 
-MEMORY_DIR = Path(__file__).resolve().parent.parent / "memory"MEMORY_DIR.mkdir(exist_ok=True)
+MEMORY_DIR = Path(__file__).resolve().parent.parent / "memory"
+MEMORY_DIR.mkdir(exist_ok=True)
+
 MEMORY_FILE = MEMORY_DIR / "user_memory.json"
 
 if not MEMORY_FILE.exists():
