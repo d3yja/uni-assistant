@@ -5,6 +5,8 @@ Simple LangChain/LangGraph implementation of a university FAQ chatbot. Classifie
 
 ### Credits and Attribution
 
-**Abubakrn** — Things
+**Abubakr** — Things
+
 **Ahmed** — Something I forgot
+
 **Mahd** — Uhhh
