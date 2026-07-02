@@ -6,6 +6,6 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 model = ChatGroq(
-    model="llama-3.1-8b-instant",  # see note below
+    model="llama-3.3-70b-versatile",  # see note below
     temperature=0,
 )

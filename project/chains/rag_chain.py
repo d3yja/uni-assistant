@@ -32,7 +32,7 @@ from ..state import GraphState
 def _build_vectorstore() -> Chroma:
     embeddings = FastEmbedEmbeddings(model_name=EMBEDDING_MODEL_NAME)
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size=500,
+        chunk_size=600,
         chunk_overlap=50,
         separators=["\n## ", "\n### ", "\n\n", "\n", " ", ""],
     )
