@@ -10,6 +10,12 @@ from typing import Literal
 from langchain_core.prompts import ChatPromptTemplate
 from state import GraphState
 from human_review import human_review
+from memory import (
+    save_user_memory,
+    get_user_memory,
+    get_all_memory,
+)
+
 
 
 #API Key
@@ -217,22 +223,83 @@ def document_picker(state: GraphState):
 
 def memory_node(state: GraphState):
 
-    """
-    Placeholder.
+    """memory
 
-    Later this node can call your memory.py file.
+    Questions about remembering information.
 
-    Example:
+    Examples
 
-    from memory import save_memory
+    Remember my favorite subject is AI.
 
-    save_memory(...)
-    """
+    Remember I live in Lahore.
+
+    What do you remember about me?
+
+    hat do you know about me?"""
+
+    question = state["question"].lower()
+
+    # -----------------------------
+    # Save memory
+    # -----------------------------
+
+    if "remember" in question:
+
+        try:
+
+            text = state["question"]
+
+            info = text.split("remember", 1)[1].strip()
+
+            save_user_memory(info)
+
+            return {
+
+                "answer":
+                f"I'll remember that: {info}"
+
+            }
+
+        except:
+
+            return {
+
+                "answer":
+                "I couldn't understand what to remember."
+
+            }
+
+    # -----------------------------
+    # Recall memory
+    # -----------------------------
+
+    if "what do you remember" in question \
+       or "what do you know about me" in question:
+
+    memory = get_all_memory()
+
+    if "memories" not in memory or len(memory["memories"]) == 0:
+
+        return {
+            "answer": "I don't have anything stored yet."
+        }
+
+    text = "Here is what I remember:\n\n"
+
+    for i, item in enumerate(memory["memories"], start=1):
+
+        text += f"{i}. {item}\n"
 
     return {
-        "answer": "Memory operation completed."
+        "answer": text
     }
 
+    return {
+
+        "answer":
+        "Memory request completed."
+
+    }
 
 # These will be implemented later
 from rag_pipeline import (
