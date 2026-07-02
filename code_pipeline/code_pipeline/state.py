@@ -3,6 +3,7 @@
 # ============================================================
 
 from typing import TypedDict
+from langchain_core.documents import Document
 
 
 class GraphState(TypedDict):
@@ -17,11 +18,11 @@ class GraphState(TypedDict):
     # greeting | rag | memory | unknown
     intent: str
 
-    # Documents selected by the document picker
+    # Documents selected by the Document Picker
     selected_documents: list[str]
 
-    # Retrieved chunks from the RAG pipeline
-    retrieved_documents: list[str]
+    # Retrieved document chunks from the RAG pipeline
+    retrieved_documents: list[Document]
 
     # Final/generated answer
     answer: str
