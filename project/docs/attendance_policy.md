@@ -1,21 +1,20 @@
 # Attendance Policy
 
-## General Requirement
-Students are expected to attend at least 75% of scheduled classes for each course to remain eligible to sit for final exams.
+This document outlines the attendance requirements for all students to ensure academic success and institutional compliance.
 
-## Reporting Absences
-Absences due to illness or emergencies must be reported to the course instructor within 48 hours. Supporting documentation (e.g. a medical certificate) is required for absences longer than 3 consecutive days.
+## Minimum Attendance Requirement
+Students are required to maintain a minimum of **75% attendance** in all registered courses to be eligible to sit for the final examinations.
 
-## Consequences of Low Attendance
-- Below 75% attendance: student is barred from the final exam and must petition the Dean's office for an exception.
-- Below 50% attendance: automatic withdrawal from the course with a "W" grade.
+## Attendance Tracking
+* Attendance is recorded for every lecture, tutorial, and laboratory session.
+* It is the student's responsibility to ensure their presence is marked by the instructor.
+* Weekly attendance reports will be published on the Student Portal.
 
-## Excused Absences
-The following are considered excused with proper documentation:
-- Medical emergencies
-- Bereavement (immediate family)
-- University-sponsored events (sports, academic competitions)
-- Religious observances
+## Leave of Absence
+* **Medical Leave:** Absences due to medical reasons must be supported by a medical certificate from a registered practitioner and submitted to the department office within three working days of returning.
+* **Official Leave:** Students representing the University in official events (sports, conferences, etc.) must obtain prior approval from the Dean of Students to be considered "Present" for those sessions.
+* **Personal Leave:** Students are granted a maximum of two days of casual leave per semester. These do not count as excused absences but will be noted in the system.
 
-## Late Arrivals
-Arriving more than 15 minutes late to a class counts as one-half of an absence for that session.
+## Consequences of Non-Compliance
+* **Below 75%:** Students falling between 60% and 74% attendance will be issued a formal warning and may be barred from the final examination unless a valid, documented reason is accepted by the Attendance Committee.
+* **Below 60%:** Students with attendance below 60% will be automatically debarred from the final examination and will receive an 'F' grade for the course.

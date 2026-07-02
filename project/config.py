@@ -14,6 +14,7 @@ AVAILABLE_DOCS = {
     "attendance_policy.md": "Attendance requirements, absence rules, and consequences for missing classes.",
     "hostel_rules.md": "Hostel/dormitory rules, curfews, visitor policy, disciplinary procedures.",
     "contact_directory.md": "Contact info for faculty, staff, departments, and offices.",
+    "lab_guidelines.md": "Lab safety rules, equipment usage, and lab access policies.",
 }
 
 # --------------------------------------------------------------------------

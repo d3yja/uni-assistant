@@ -1,26 +1,28 @@
 # Grading Policy
 
+This document defines the grading system and academic evaluation standards for the University.
+
 ## Grading Scale
-| Letter Grade | Percentage | GPA Points |
-|---|---|---|
-| A  | 93–100% | 4.0 |
-| A- | 90–92%  | 3.7 |
-| B+ | 87–89%  | 3.3 |
-| B  | 83–86%  | 3.0 |
-| B- | 80–82%  | 2.7 |
-| C+ | 77–79%  | 2.3 |
-| C  | 70–76%  | 2.0 |
-| D  | 60–69%  | 1.0 |
-| F  | Below 60% | 0.0 |
+The University follows a 4.0 GPA scale. Grades are assigned based on the following conversion:
 
-## GPA Calculation
-GPA is calculated as the weighted average of grade points across all credit hours attempted. Courses taken pass/fail are excluded from GPA calculation but count toward credit hours.
+| Letter Grade | Percentage Range | Grade Points |
+| :--- | :--- | :--- |
+| **A** | 90% – 100% | 4.0 |
+| **B+** | 85% – 89% | 3.5 |
+| **B** | 80% – 84% | 3.0 |
+| **C+** | 75% – 79% | 2.5 |
+| **C** | 70% – 74% | 2.0 |
+| **D** | 60% – 69% | 1.0 |
+| **F** | Below 60% | 0.0 |
 
-## Grade Appeals
-Students who wish to appeal a final grade must submit a written request to the instructor within 10 business days of the grade being posted. If unresolved, the appeal can be escalated to the department chair within 5 additional business days.
+## Evaluation Components
+Final course grades are determined by the following weightage:
+* **Assignments/Quizzes:** 20%
+* **Mid-Semester Examination:** 30%
+* **Projects/Labs:** 20%
+* **Final Examination:** 30%
 
-## Incomplete Grades
-An "Incomplete" (I) may be granted for documented emergencies. Coursework must be completed within 60 days of the end of the semester, or the grade automatically converts to an F.
-
-## Repeating Courses
-Students may repeat a course once to improve their grade. Only the higher grade is used in GPA calculation, but both attempts remain on the transcript.
+## Policy Notes
+* **Incomplete (I):** An 'I' grade may be assigned if a student is unable to complete the course requirements due to documented medical or emergency circumstances.
+* **Withdrawal (W):** If a student drops a course before the withdrawal deadline, a 'W' grade is recorded, which does not impact the GPA.
+* **Academic Integrity:** Any form of academic dishonesty, including plagiarism or cheating, will result in an immediate 'F' grade for the assessment or the entire course, pending review by the Academic Disciplinary Committee.

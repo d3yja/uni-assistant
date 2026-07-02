@@ -1,29 +1,49 @@
 # Contact Directory
 
-## Academic Offices
-| Office | Contact | Email | Phone |
-|---|---|---|---|
-| Registrar's Office | Ms. Farah Iqbal | registrar@university.edu | ext. 1201 |
-| Dean of Students | Dr. Adeel Rahman | dean.students@university.edu | ext. 1305 |
-| Financial Aid Office | Mr. Bilal Ahmed | finaid@university.edu | ext. 1420 |
-| Examinations Office | Ms. Sana Malik | exams@university.edu | ext. 1150 |
+This document provides contact information for key administrative, academic, and support staff members at the University.
 
-## Departmental Offices
-| Department | Head of Department | Email | Phone |
-|---|---|---|---|
-| Computer Science | Dr. Hassan Ali | cs.hod@university.edu | ext. 2201 |
-| Business Administration | Dr. Ayesha Khan | ba.hod@university.edu | ext. 2305 |
-| Electrical Engineering | Dr. Usman Tariq | ee.hod@university.edu | ext. 2410 |
+## Administration
+| Role | Name | Email | Office |
+| :--- | :--- | :--- | :--- |
+| **Dean of Students** | Dr. Ayesha Khan | dean.students@university.edu | Admin Block, Room 101 |
+| **Registrar** | Mr. Ahmed Raza | registrar@university.edu | Admin Block, Room 105 |
+| **Chief Warden** | Ms. Fatima Hussain | warden.office@university.edu | Hostel Block A, Office 1 |
 
-## Hostel & Campus Life
-| Office | Contact | Email | Phone |
-|---|---|---|---|
-| Hostel Warden (Boys) | Mr. Kamran Sheikh | warden.boys@university.edu | ext. 3110 |
-| Hostel Warden (Girls) | Ms. Nadia Yousaf | warden.girls@university.edu | ext. 3115 |
-| Campus Security | Security Desk | security@university.edu | ext. 3000 (24/7) |
-| Health Center | Dr. Zainab Chaudhry | healthcenter@university.edu | ext. 3500 |
+## Academic Departments
 
-## Emergency
-- Campus Emergency Line: ext. 9111
-- Local Police: 15
-- Local Ambulance: 1122
+### Department of Computer Science
+*   **Head of Department (HOD):** Dr. Uzair Ahmed (hod.cs@university.edu)
+    *   *Administrative Assistant:* Ms. Fatima Noor (f.noor@university.edu)
+    *   *Lab Coordinator:* Mr. Salman Ali (s.ali@university.edu)
+    *   *Graduate Program Coordinator:* Dr. Zara Khan (z.khan@university.edu)
+
+### Department of Electrical Engineering
+*   **Head of Department (HOD):** Dr. Haris Mahmood (hod.ee@university.edu)
+    *   *Administrative Assistant:* Mr. Tariq Saeed (t.saeed@university.edu)
+    *   *Lab Manager:* Engr. Hina Batool (h.batool@university.edu)
+    *   *Undergraduate Advisor:* Dr. Omer Farooq (o.farooq@university.edu)
+
+### Department of Bioinformatics
+*   **Head of Department (HOD):** Dr. Maria Iqbal (hod.bio@university.edu)
+    *   *Administrative Assistant:* Ms. Sana Malik (s.malik@university.edu)
+    *   *Research Coordinator:* Dr. Jawad Hassan (j.hassan@university.edu)
+    *   *Technician:* Mr. Waqas Ahmed (w.ahmed@university.edu)
+
+### Department of Medical Sciences
+*   **Head of Department (HOD):** Dr. Aslam Khan (hod.med@university.edu)
+    *   *Administrative Assistant:* Ms. Rabia Bashir (r.bashir@university.edu)
+    *   *Clinical Coordinator:* Dr. Nadia Sultan (n.sultan@university.edu)
+    *   *Academic Advisor:* Dr. Faisal Aziz (f.aziz@university.edu)
+
+## Support Staff
+| Role | Name | Email / Contact | Location |
+| :--- | :--- | :--- | :--- |
+| **Head Janitor** | Mr. Jón Sigurðsson | janitor.office@university.edu | Maintenance Annex |
+| **Library Services** | Ms. Hina Siddiqui | library@university.edu | Main Library, Desk 1 |
+| **Security Desk** | Security Team | security@university.edu | Main Gate Office |
+
+***
+
+## Emergency Contacts
+* **Campus Security (24/7):** +92 51 123 4567
+* **Medical Emergency:** +92 51 987 6543

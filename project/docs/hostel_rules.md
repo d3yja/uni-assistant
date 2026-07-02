@@ -1,24 +1,23 @@
-# Hostel Rules
+# Hostel Rules and Regulations
 
-## Curfew
-- Sunday–Thursday: all residents must be back in the hostel by 10:30 PM.
-- Friday–Saturday: curfew extended to 12:30 AM.
-- Late entries must be logged with the hostel warden and require a valid reason.
+This document sets the code of conduct for all students residing in university-managed hostels. Failure to comply may result in disciplinary action, including eviction.
 
-## Visitor Policy
-- Visitors are allowed in common areas only, between 10:00 AM and 8:00 PM.
-- Overnight guests are not permitted under any circumstances.
-- All visitors must sign in at the front desk and carry valid ID.
+## General Conduct
+* **Quiet Hours:** 22:00 to 07:00. Noise must be kept to a minimum to facilitate a study-friendly environment.
+* **Visitors:** Visitors are only permitted in the designated common area until 20:00. No visitors of the opposite gender are allowed in the residential wings.
+* **Prohibited Items:** Use of heaters, immersion rods, induction stoves, and any open-flame cooking devices is strictly prohibited in rooms due to fire hazards.
+* **Smoking and Alcohol:** The campus and hostel premises are strictly non-smoking and alcohol-free zones.
 
-## Room Rules
-- Residents may not paint, drill, or permanently alter hostel room walls or furniture.
-- Cooking appliances (hot plates, induction cookers) are prohibited in rooms; use of the common kitchen is allowed between 7:00 AM and 10:00 PM.
-- Rooms are inspected monthly for cleanliness and safety compliance.
+## Check-in and Curfew
+* **Curfew:** All students must be inside the hostel premises by 22:30. 
+* **Late Entry:** Any entry after 22:30 requires prior written permission from the Chief Warden.
+* **Outstation Leave:** Students leaving the hostel for overnight trips must sign the "Outstation Register" at the main security desk and provide emergency contact details.
 
-## Disciplinary Procedure
-1. First violation: written warning issued by the hostel warden.
-2. Second violation: fine of $50 and notification to parents/guardians.
-3. Third violation: possible suspension from hostel accommodation, subject to review by the Student Affairs Committee.
+## Room Maintenance
+* **Cleanliness:** Students are responsible for maintaining the cleanliness of their assigned rooms.
+* **Damages:** Any damage to furniture, fixtures, or walls must be reported immediately. Repair costs for non-accidental damage will be deducted from the student's security deposit.
+* **Room Inspections:** The administration reserves the right to conduct unannounced room inspections to ensure health, safety, and adherence to hostel policies.
 
-## Maintenance Requests
-Maintenance issues (plumbing, electrical, furniture) should be reported via the hostel maintenance portal or directly to the warden's office. Urgent issues (e.g. water leaks, electrical hazards) are prioritized and typically addressed within 24 hours.
+## Security
+* **Valuables:** The University is not responsible for the loss of personal property. Students are advised to keep their rooms locked at all times.
+* **ID Cards:** Students must present their University ID card to security personnel upon request.
